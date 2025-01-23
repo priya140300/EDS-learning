@@ -12,7 +12,7 @@ export default async function decorate(block) {
     const placeholders = await fetchPlaceholders('en'); 
     // retrieve the value for key 'foo'
     console.log(placeholders);
-    const { English} = placeholders;
-    console.log(English);
+    const { english} = placeholders;
+    console.log(english);
 
 } 
