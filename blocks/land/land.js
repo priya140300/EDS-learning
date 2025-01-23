@@ -13,5 +13,6 @@ export default async function decorate(block) {
   // Safely destructure and check for undefined
   
     const { english } = placeholders;
+    console.log(english);
    
 }
