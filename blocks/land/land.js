@@ -11,10 +11,7 @@ export default async function decorate(block) {
   console.log('Placeholders:', placeholders);
 
   // Safely destructure and check for undefined
-  if (placeholders) {
+  
     const { english } = placeholders;
-    console.log('English Placeholder:', english);
-  } else {
-    console.error('Placeholders object is null or undefined');
-  }
+   
 }
