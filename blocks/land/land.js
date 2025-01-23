@@ -11,6 +11,7 @@ export default async function decorate(block) {
     // fetch placeholders sheet  from the 'en' folder
     const placeholders = await fetchPlaceholders('en'); 
     // retrieve the value for key 'foo'
+    console.log(placeholders);
     const { English} = placeholders;
     console.log(English);
 
