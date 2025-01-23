@@ -19,7 +19,7 @@ export default async function decorate(block) {
 
  
 
-const placeholders = await fetchPlaceholders('mysite'); 
+const placeholders = await fetchPlaceholders(''); 
 const {Click} = placeholders;
 console.log(Click);
 
