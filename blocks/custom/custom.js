@@ -6,15 +6,17 @@
 // we can iterate on the array and show each item as li item. 
 
 
-console.log(data);
 export default async function decorate(block) {
     const response = await fetch("../../tags.json");
     if(!response.ok) throw new Error("failed to load json file");
-    const data = response.json();
-
-
+    const json = await response.json();
+    const data = json.data;
     
-   const title =  document.createElement("h1");
+    
+    
+    const title =  document.createElement("h1");
+    console.log(data);
+    title.textContent="HTML Tags and their usage"
    block.appendChild(title);
     const ul = document.createElement("ul");
     data.forEach((item) => {
