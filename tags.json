@@ -1,0 +1,22 @@
+ [
+    {
+      "Tag": "h1",
+      "Usage": "for heading"
+    },
+    {
+      "Tag": "img",
+      "Usage": "for image"
+    },
+    {
+      "Tag": "iframe",
+      "Usage": "for embeding yt video"
+    },
+    {
+      "Tag": "div",
+      "Usage": "block"
+    },
+    {
+      "Tag": "span",
+      "Usage": "inkine tag"
+    }
+  ]
