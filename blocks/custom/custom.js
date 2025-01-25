@@ -5,9 +5,15 @@
 // to the block as a list of Data;
 // we can iterate on the array and show each item as li item. 
 
-import data from "../../tags.json";
+
 console.log(data);
 export default async function decorate(block) {
+    const response = await fetch("../../tags.json");
+    if(!response.ok) throw new Error("failed to load json file");
+    const data = response.json();
+
+
+    
    const title =  document.createElement("h1");
    block.appendChild(title);
     const ul = document.createElement("ul");
