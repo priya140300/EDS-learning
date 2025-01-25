@@ -18,6 +18,7 @@ export default async function decorate(block) {
   block.append(ul);
 
  
+//here the placeholder was inside the root folder ,so not naming the folder inside fetchPlaceHolders function
 
 const placeholders = await fetchPlaceholders(''); 
 console.log(placeholders);
